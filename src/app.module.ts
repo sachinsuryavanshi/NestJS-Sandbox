@@ -6,8 +6,8 @@ import { ConfigurationController } from './configuration/configuration.controlle
 import { OrderController } from './order/order.controller';
 import { MenuService } from './menu/menu.service';
 import { OrderService } from './order/order.service';
-import { OrderService } from './order/order.service';
-import { MenuService } from './menu/menu.service';
+
+
 
 @Module({
   imports: [],
