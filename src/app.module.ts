@@ -6,11 +6,14 @@ import { ConfigurationController } from './configuration/configuration.controlle
 import { OrderController } from './order/order.controller';
 import { MenuService } from './menu/menu.service';
 import { OrderService } from './order/order.service';
+import { MenuModule } from './menu/menu.module';
+import { ConfigurationModule } from './configuration/configuration.module';
+import { OrderModule } from './order/order.module';
 
 
 
 @Module({
-  imports: [],
+  imports: [MenuModule, ConfigurationModule, OrderModule],
   controllers: [AppController, MenuController, ConfigurationController, OrderController],
   providers: [AppService, MenuService, OrderService],
 })
